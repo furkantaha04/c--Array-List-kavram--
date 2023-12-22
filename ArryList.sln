@@ -8,9 +8,9 @@ namespace ArryList
         {
           ArrayList islemler = new ArrayList();
 
-            islemler.Add(4);
-            islemler.Add(8);
-            islemler.Add(6);
+            islemler.Add("ali");
+            islemler.Add("Mehmet");
+            islemler.Add("yusuf);
             // islemler.Remove("suat"); // SEÇTİĞİ KISMI SİLER
 
             //islemler.clear(); // HEPSİNİ SİLER
@@ -27,7 +27,7 @@ namespace ArryList
         
             // islemler.Sort(); // KISA YOLDAN SORT İLE SIRALAR
 
-            foreach(int  a in islemler)
+            foreach(string  a in islemler)
             {
                 Console.WriteLine(a);
                
