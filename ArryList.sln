@@ -1,25 +1,49 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34330.188
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArryList", "ArryList\ArryList.csproj", "{33AC9EA1-0D73-44CD-852B-BFE71FE04B7D}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33AC9EA1-0D73-44CD-852B-BFE71FE04B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33AC9EA1-0D73-44CD-852B-BFE71FE04B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33AC9EA1-0D73-44CD-852B-BFE71FE04B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33AC9EA1-0D73-44CD-852B-BFE71FE04B7D}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {92AD1395-E9CE-464F-BB03-448149ADADE2}
-	EndGlobalSection
-EndGlobal
+
+namespace ArryList
+{
+    internal class Program
+    {
+      
+        static void Main(string[] args)
+        {
+          ArrayList islemler = new ArrayList();
+
+            islemler.Add(4);
+            islemler.Add(8);
+            islemler.Add(6);
+            // islemler.Remove("suat"); // SEÇTİĞİ KISMI SİLER
+
+            //islemler.clear(); // HEPSİNİ SİLER
+
+            //  int count = islemler.Count; // TOPLAM ELEMAN SAYISINI VERİR
+
+            // bool kontrol = islemler.Contains("memo");// MEMO KELİMESİ VAR MI YOK MU KONTROL EDİLİR TRUE FALSE
+
+            //int İNDEX = islemler.IndexOf("memo"); // İNDEX NO BAKILIR
+
+          //  islemler.Insert(3, "TAHA");// index numarası ile istediğin yere isim yada sayi eklersin 
+
+         // islemler.Reverse(); // ELEMEANLARI TERSTEN SIRALAR
+        
+            // islemler.Sort(); // KISA YOLDAN SORT İLE SIRALAR
+
+            foreach(int  a in islemler)
+            {
+                Console.WriteLine(a);
+               
+            }
+           // Console.WriteLine("index numarası: "+İNDEX);//ELEMANIN KAÇINCI İNDİSTE OLDUĞU GÖSTERİR.
+            // Console.WriteLine( "var mı: "+kontrol ); // ELEMAN VAR MI YOK MU BAKILIR
+            //    Console.WriteLine("dizinin toplam eleman sayısı : "+count);
+            Console.ReadLine();
+
+
+            // İNT DEN STRİNG YAPMA
+
+          /*  int c = 10;
+            string b = c.ToString(); 
+          */
+
+        }
+    }
+}
